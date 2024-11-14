@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 import app4 from "../images/app4.png";
 import right from "../images/right.svg";

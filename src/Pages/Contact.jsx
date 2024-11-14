@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import  { useRef, useState } from "react";
 import Banner from "../components/Banner";
 import contactImage from "../images/contactImage.png";
 import ContactCard from "../components/ContactCard";
@@ -33,22 +33,24 @@ const Contact = () => {
     setEmailError("");
 
     emailjs
-      .sendForm(
-        "service_31p2vdp",
-        "template_og2rtkf",
-        form.current,
-        "XohnXcZl3e1DVEBqg"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          toast.success("We received your message and will contact you soon!");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Failed to send message, please try again.");
-        }
-      );
+        .sendForm(
+            'service_2am5ny8',
+            'template_kul5aok',
+            form.current,
+            'g9sIqISEwawFzL2ND'
+        )
+        .then(
+            (result) => {
+                console.log(result.text);
+                toast.success(
+                    'We received your message and will contact you soon!'
+                );
+            },
+            (error) => {
+                console.log(error.text);
+                alert('Failed to send message, please try again.');
+            }
+        );
 
     e.target.reset();
   };

@@ -9,14 +9,12 @@ import Flavor from "./Pages/Flavor";
 import Season from "./Pages/Season";
 import Ingredient from "./Pages/Ingredient";
 import Compond from "./Pages/Compond";
-import DropDown from "./components/DropDown";
 
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <DropDown/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
